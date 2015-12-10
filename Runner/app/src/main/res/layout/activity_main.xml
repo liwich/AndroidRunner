@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_height="wrap_content" android:layout_width="fill_parent">
+    <LinearLayout  android:layout_width="match_parent"
+        android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".MainActivity"
+        android:orientation="vertical"
+         >
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageView" android:src="@drawable/logo"
+            android:adjustViewBounds="true"
+            android:background="#FFFFFF"
+            android:layout_marginBottom="-15dp" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/mensaje" android:text="Iniciando GPS"
+            android:textSize="25dp" android:textColor="@color/primary_dark_material_light" android:layout_weight="1"
+            android:gravity="center|right"/>
+            <ProgressBar
+                style="?android:attr/progressBarStyleLarge"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/progressBar"
+                android:progressTint="#FF009587"
+                android:progressBackgroundTint="#FF009587"
+                android:layout_weight="1"/>
+
+        </LinearLayout>
+
+
+        <EditText
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/usuario"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1" android:hint="Usuario"
+            android:backgroundTint="#FF009587"
+            android:textSize="25dp"
+            android:layout_marginTop="-15dp"
+            android:password="false"
+            android:inputType="text"
+            android:lines="1"
+            android:singleLine="true" />
+
+        <EditText
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/password"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1" android:hint="Password" android:password="true" android:theme="@style/Base.V12.Widget.AppCompat.EditText"
+            android:backgroundTint="#FF009587"
+            android:textSize="25dp"
+            android:lines="1"
+            android:singleLine="true" />
+
+        <Button
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" android:text="Ingresar" android:id="@+id/ingresar_boton"
+            android:background="#FF3F51B4"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:textSize="25dp"
+            android:elegantTextHeight="false"
+            android:textColor="#FFFFFF"
+            android:onClick="ingresar"/>
+        <Button
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" android:text="Registrar" android:id="@+id/registrar_boton"
+            android:background="#FF009587"
+            android:textSize="25dp"
+            android:textColor="#FFFFFF"
+            android:onClick="registrar"/>
+
+    </LinearLayout>
+
+
+</ScrollView>

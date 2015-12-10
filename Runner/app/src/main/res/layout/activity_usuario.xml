@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.example.luismanuel.runner.usuarioActivity"
+    android:orientation="vertical"
+    android:weightSum="1">
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" android:id="@+id/bienvenida_text"
+        android:text="Bienvenido " android:textSize="30dp"
+        android:gravity="center_horizontal"/>
+<LinearLayout
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content">
+    <ImageButton
+        android:layout_width="fill_parent"
+        android:layout_height="200dp"
+        android:layout_weight="1"
+        android:src="@drawable/logocorrer"
+        android:adjustViewBounds="false"
+        android:cropToPadding="false"
+        android:scaleType="fitCenter"  android:tint="#FFFF"
+        android:background="#3f51b4"
+        android:layout_margin="5dp"
+        android:id="@+id/correr_boton"
+        android:clickable="true" android:onClick="correr"/>
+    <ImageButton
+        android:layout_width="fill_parent"
+        android:layout_height="200dp"
+        android:layout_weight="1"
+        android:src="@drawable/logoestadisticas"
+        android:scaleType="fitCenter"
+        android:background="#009587"
+        android:tint="#ffffff"
+        android:layout_margin="5dp"
+        android:id="@+id/estadisticas_boton"
+        android:onClick="estadisticas"
+        />
+
+</LinearLayout>
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+        <ImageButton
+            android:layout_width="fill_parent"
+            android:layout_height="200dp"
+            android:layout_weight="1" android:src="@drawable/logoconfig"
+            android:scaleType="fitCenter"
+            android:tint="#FFFFFF"
+            android:background="#FF374046"
+            android:layout_margin="5dp"
+            android:id="@+id/configuracion_boton"
+            android:onClick="configuracion"/>
+        <ImageButton
+            android:layout_width="fill_parent"
+            android:layout_height="200dp"
+            android:layout_weight="1"
+            android:src="@drawable/logosa" android:scaleType="fitCenter"
+            android:background="#FF607D8A"
+            android:tint="#FFFFFF"
+            android:layout_margin="5dp"
+            android:id="@+id/salir_boton"
+            android:onClick="salir"
+            />
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

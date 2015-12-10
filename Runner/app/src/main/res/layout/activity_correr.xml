@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.example.luismanuel.runner.correrActivity" android:orientation="vertical"
+    android:weightSum="1">
+
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" android:text="Tiempo:" android:gravity="center_horizontal" android:textSize="30dp" android:layout_marginBottom="10dp"/>
+
+    <Chronometer
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/chronometer"
+        android:layout_gravity="center_horizontal"
+        android:textAlignment="center"
+        android:textSize="70dp" android:layout_marginBottom="10dp"
+        android:format="%s"
+
+        />
+
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Iniciar"
+        android:id="@+id/boton_iniciar_correr"
+        android:layout_gravity="center_horizontal"
+        android:background="#FF009587"
+        android:textColor="#FFFFFF" android:textSize="25dp" android:layout_marginBottom="10dp"
+        android:onClick="iniciar"/>
+
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Terminar"
+        android:id="@+id/boton_terminar"
+        android:layout_gravity="center_horizontal"
+        android:background="#FFFD5722"
+        android:textColor="#FFFFFF" android:textSize="25dp"
+        android:layout_marginBottom="10dp"
+        android:enabled="false"
+        android:onClick="terminar"/>
+<TextView
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content" android:id="@+id/text"/>
+
+</LinearLayout>
